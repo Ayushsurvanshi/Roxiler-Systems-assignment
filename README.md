@@ -8,10 +8,7 @@
   <h3>🏪 Enterprise Store Rating and Management Platform</h3>
   <p><strong>Discover, Rate, and Manage Retail Establishments with Enterprise-Grade Security</strong></p>
   
-  <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/Release-v1.0.0-blue?style=for-the-badge" alt="Version" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License" />
-  <img src="https://img.shields.io/badge/SLA-99.9%25_Uptime-orange?style=for-the-badge" alt="Uptime" />
+ 
 </div>
 
 ---
