@@ -70,13 +70,6 @@ The application follows a microservices-based architecture with clear separation
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </p>
 
-### **Development Tools**
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm" />
-  <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black" alt="Webpack" />
-  <img src="https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=black" alt="Babel" />
-</p>
 
 </div>
 
@@ -90,6 +83,9 @@ The application follows a microservices-based architecture with clear separation
 - User registration for normal users
 - JWT-based authentication with refresh tokens
 
+  <img width="1904" height="842" alt="Screenshot 2025-09-15 035817" src="https://github.com/user-attachments/assets/0f66088d-45ee-43ca-9366-9388e0b0b5c8" />
+
+
 ### 👥 Role-Based Access Control
 
 #### System Administrator Features
@@ -99,23 +95,59 @@ The application follows a microservices-based architecture with clear separation
   - Total users count
   - Total stores count
   - Total ratings submitted
+    
+    <img width="1899" height="896" alt="Screenshot 2025-09-15 033025" src="https://github.com/user-attachments/assets/8404dbf9-b9cb-445c-acff-3c68c715df40" />
+    <img width="1889" height="900" alt="Screenshot 2025-09-15 033041" src="https://github.com/user-attachments/assets/e9c31d09-c255-4246-9382-2411ae154bdd" />
+    <img width="1919" height="889" alt="Screenshot 2025-09-15 033050" src="https://github.com/user-attachments/assets/e99b1c9a-e7ed-4a4b-98e8-b400a66ce183" />
+    <img width="1904" height="903" alt="Screenshot 2025-09-15 033131" src="https://github.com/user-attachments/assets/bacb9f08-b497-4b07-aa42-3c9b985eff4d" />
+    <img width="1919" height="894" alt="Screenshot 2025-09-15 033153" src="https://github.com/user-attachments/assets/d5f0237f-69db-4ba6-bcd9-1fa379615756" />
+    <img width="1915" height="890" alt="Screenshot 2025-09-15 033411" src="https://github.com/user-attachments/assets/2fc0a956-4e64-42eb-ab20-ecf5f12fcd23" />
+    <img width="1919" height="763" alt="Screenshot 2025-09-15 033434" src="https://github.com/user-attachments/assets/a8294eac-62c7-4ad6-877b-528de57df9eb" />
+
+
+
+
+
+
+
+    
 
 #### Normal User Features
 - Account registration and management
 - Store discovery and search functionality
 - Rating submission and modification
 - Password updates
+  
+  <img width="1345" height="618" alt="image" src="https://github.com/user-attachments/assets/11b89c5e-f131-4180-8cba-5574dca7362e" />
+  <img width="1347" height="614" alt="image" src="https://github.com/user-attachments/assets/85a2af56-776d-41a4-aaa1-6632ae5ba00f" />
+  <img width="1481" height="608" alt="image" src="https://github.com/user-attachments/assets/8b07f9a3-ac3a-49a4-aa26-d477549ec12f" />
+
+  
+
+
 
 #### Store Owner Features
 - Dedicated dashboard
 - Rating analytics
 - Customer feedback monitoring
+  
+  <img width="1915" height="847" alt="Screenshot 2025-09-15 034309" src="https://github.com/user-attachments/assets/0a743027-59f2-444a-96c4-456156a62302" />
+  <img width="1919" height="640" alt="Screenshot 2025-09-15 034317" src="https://github.com/user-attachments/assets/66616d04-c413-4a6b-8bcc-60b094795144" />
+
+
+
 
 ### 📊 Data Management
 - Sortable tables (ascending/descending)
 - Advanced filtering options
 - Real-time rating updates
 - Responsive data tables
+  
+  <img width="1464" height="493" alt="Screenshot 2025-09-15 033113" src="https://github.com/user-attachments/assets/e5fa709f-89f9-48d2-ba9c-c4c75acbcc97" />
+  <img width="1904" height="903" alt="Screenshot 2025-09-15 033131" src="https://github.com/user-attachments/assets/a6adaad0-d28f-45a5-b9d6-6146700d2b3b" />
+  
+
+
 
 ---
 
@@ -134,6 +166,7 @@ CREATE TABLE users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
+<img width="1606" height="362" alt="Screenshot 2025-09-15 040543" src="https://github.com/user-attachments/assets/66339424-6c61-4b4c-80f5-3ac1b7d6315d" />
 
 ### Stores Table
 ```sql
@@ -147,6 +180,7 @@ CREATE TABLE stores (
     FOREIGN KEY (owner_id) REFERENCES users(id) ON DELETE SET NULL
 );
 ```
+<img width="1150" height="316" alt="image" src="https://github.com/user-attachments/assets/8b2ae6b6-801f-4d6b-9beb-e7a261c9e59b" />
 
 ### Ratings Table
 ```sql
@@ -162,6 +196,7 @@ CREATE TABLE ratings (
     UNIQUE KEY unique_user_store_rating (user_id, store_id)
 );
 ```
+<img width="635" height="293" alt="Screenshot 2025-09-15 040452" src="https://github.com/user-attachments/assets/83def5a2-a7f4-49cf-aedc-73a836061700" />
 
 ---
 
